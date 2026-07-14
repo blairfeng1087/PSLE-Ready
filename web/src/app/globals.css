@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F5F5F7;
+  --foreground: #1A1A2E;
+  --primary: #10B981;
+  --primary-dark: #059669;
+  --primary-light: #ECFDF5;
+  --accent: #6366F1;
+  --accent-light: #EEF2FF;
+  --warm: #F97316;
+  --warm-light: #FFF7ED;
+  --error: #EF4444;
+  --error-light: #FEF2F2;
+  --surface: #FFFFFF;
+  --border: #F3F4F6;
+  --border-strong: #E5E7EB;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-warm: var(--warm);
+  --color-warm-light: var(--warm-light);
+  --color-error: var(--error);
+  --color-error-light: var(--error-light);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
